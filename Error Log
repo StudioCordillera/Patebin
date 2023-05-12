@@ -1,0 +1,654 @@
+2023-05-12T06:39:58.050118535Z [34m╭────────────[34m[30m[44m git repo clone [0m[0m[34m───────────╼[0m
+2023-05-12T06:39:58.050172002Z [34m│[0m [34m › fetching app source code[0m
+2023-05-12T06:39:58.050179352Z [34m│[0m => Selecting branch "main"
+2023-05-12T06:39:58.050188051Z [34m│[0m => Checking out commit "e43ee8a266a92f0121350f577913b0b84d99bd8a"
+2023-05-12T06:39:58.050193654Z [34m│[0m 
+2023-05-12T06:39:58.050201401Z [34m│[0m [32m ✔ cloned repo to [35m/.app_platform_workspace[0m[0m
+2023-05-12T06:39:58.050206654Z [34m╰────────────────────────────────────────╼[0m
+2023-05-12T06:39:58.050210028Z 
+2023-05-12T06:40:00.548288810Z [34m › configuring build-time app environment variables:[0m
+2023-05-12T06:40:00.548330598Z      PINECONE_INDEX BEARER_TOKEN OPEN_API_KEY DATASTORE PINECONE_API_KEY PINECONE_ENVIRONMENT
+2023-05-12T06:40:00.619104407Z [34m╭────────────[34m[30m[44m dockerfile build [0m[0m[34m───────────╼[0m
+2023-05-12T06:40:00.654402555Z [34m│[0m [34m › using dockerfile [35m/.app_platform_workspace/Dockerfile[0m[0m
+2023-05-12T06:40:00.657296450Z [34m│[0m [34m › using build context [35m/.app_platform_workspace//[0m[0m
+2023-05-12T06:40:00.657509464Z [34m│[0m 
+2023-05-12T06:40:01.284314128Z [34m│[0m [36mINFO[0m[0000] Resolved base name python:3.10 to requirements-stage 
+2023-05-12T06:40:01.284341948Z [34m│[0m [36mINFO[0m[0000] Using dockerignore file: /.app_platform_workspace/.dockerignore 
+2023-05-12T06:40:01.284346655Z [34m│[0m [36mINFO[0m[0000] Retrieving image manifest python:3.10        
+2023-05-12T06:40:01.287095056Z [34m│[0m [36mINFO[0m[0000] Retrieving image library/python:3.10 from registry mirror <registry-uri-0> 
+2023-05-12T06:40:01.722195386Z [34m│[0m [36mINFO[0m[0001] Retrieving image manifest python:3.10        
+2023-05-12T06:40:01.722227333Z [34m│[0m [36mINFO[0m[0001] Returning cached image manifest              
+2023-05-12T06:40:01.736576844Z [34m│[0m [36mINFO[0m[0001] Retrieving image manifest python:3.10        
+2023-05-12T06:40:01.736602886Z [34m│[0m [36mINFO[0m[0001] Returning cached image manifest              
+2023-05-12T06:40:01.737465545Z [34m│[0m [36mINFO[0m[0001] Retrieving image manifest python:3.10        
+2023-05-12T06:40:01.737481503Z [34m│[0m [36mINFO[0m[0001] Returning cached image manifest              
+2023-05-12T06:40:01.739484005Z [34m│[0m [36mINFO[0m[0001] Built cross stage deps: map[0:[/tmp/requirements.txt]] 
+2023-05-12T06:40:01.739494940Z [34m│[0m [36mINFO[0m[0001] Retrieving image manifest python:3.10        
+2023-05-12T06:40:01.739498406Z [34m│[0m [36mINFO[0m[0001] Returning cached image manifest              
+2023-05-12T06:40:01.739501587Z [34m│[0m [36mINFO[0m[0001] Retrieving image manifest python:3.10        
+2023-05-12T06:40:01.739798767Z [34m│[0m [36mINFO[0m[0001] Returning cached image manifest              
+2023-05-12T06:40:01.741619435Z [34m│[0m [36mINFO[0m[0001] Executing 0 build triggers                   
+2023-05-12T06:40:01.747490829Z [34m│[0m [36mINFO[0m[0001] Building stage 'python:3.10' [idx: '0', base-idx: '-1'] 
+2023-05-12T06:40:01.750120845Z [34m│[0m [36mINFO[0m[0001] Checking for cached layer <registry-uri-1> 
+2023-05-12T06:40:02.122808466Z [34m│[0m [36mINFO[0m[0001] No cached layer found for cmd RUN pip install poetry 
+2023-05-12T06:40:02.123071867Z [34m│[0m [36mINFO[0m[0001] Resolving srcs [pyproject.toml poetry.lock*]... 
+2023-05-12T06:40:02.145753858Z [34m│[0m [36mINFO[0m[0001] Unpacking rootfs as cmd RUN pip install poetry requires it. 
+2023-05-12T06:40:46.259858510Z [34m│[0m [36mINFO[0m[0045] Initializing snapshotter ...                 
+2023-05-12T06:40:46.259891507Z [34m│[0m [36mINFO[0m[0045] Taking snapshot of full filesystem...        
+2023-05-12T06:40:55.198745947Z [34m│[0m [36mINFO[0m[0054] WORKDIR /tmp                                 
+2023-05-12T06:40:55.199240527Z [34m│[0m [36mINFO[0m[0054] Cmd: workdir                                 
+2023-05-12T06:40:55.200044641Z [34m│[0m [36mINFO[0m[0054] Changed working directory to /tmp            
+2023-05-12T06:40:55.246765527Z [34m│[0m [36mINFO[0m[0054] No files changed in this command, skipping snapshotting. 
+2023-05-12T06:40:55.246790178Z [34m│[0m [36mINFO[0m[0054] RUN pip install poetry                       
+2023-05-12T06:40:56.411822653Z [34m│[0m [36mINFO[0m[0055] Cmd: /bin/sh                                 
+2023-05-12T06:40:56.412499469Z [34m│[0m [36mINFO[0m[0055] Args: [-c pip install poetry]                
+2023-05-12T06:40:56.412514725Z [34m│[0m [36mINFO[0m[0055] Running: [/bin/sh -c pip install poetry]     
+2023-05-12T06:41:01.142865513Z [34m│[0m Collecting poetry
+2023-05-12T06:41:01.181380604Z [34m│[0m   Downloading poetry-1.4.2-py3-none-any.whl (222 kB)
+2023-05-12T06:41:01.220505657Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 222.7/222.7 kB 6.2 MB/s eta 0:00:00
+2023-05-12T06:41:01.389448135Z [34m│[0m Collecting trove-classifiers>=2022.5.19
+2023-05-12T06:41:01.395743750Z [34m│[0m   Downloading trove_classifiers-2023.5.2-py3-none-any.whl (13 kB)
+2023-05-12T06:41:01.476383245Z [34m│[0m Collecting pkginfo<2.0.0,>=1.9.4
+2023-05-12T06:41:01.483946115Z [34m│[0m   Downloading pkginfo-1.9.6-py3-none-any.whl (30 kB)
+2023-05-12T06:41:01.612938419Z [34m│[0m Collecting tomlkit!=0.11.2,!=0.11.3,<1.0.0,>=0.11.1
+2023-05-12T06:41:01.619386035Z [34m│[0m   Downloading tomlkit-0.11.8-py3-none-any.whl (35 kB)
+2023-05-12T06:41:01.715797290Z [34m│[0m Collecting poetry-core==1.5.2
+2023-05-12T06:41:01.722380125Z [34m│[0m   Downloading poetry_core-1.5.2-py3-none-any.whl (465 kB)
+2023-05-12T06:41:01.808990760Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 465.2/465.2 kB 5.6 MB/s eta 0:00:00
+2023-05-12T06:41:01.875177792Z [34m│[0m Collecting filelock<4.0.0,>=3.8.0
+2023-05-12T06:41:01.879877116Z [34m│[0m   Downloading filelock-3.12.0-py3-none-any.whl (10 kB)
+2023-05-12T06:41:02.179833442Z [34m│[0m Collecting virtualenv!=20.4.5,!=20.4.6,<21.0.0,>=20.4.3
+2023-05-12T06:41:02.189054136Z [34m│[0m   Downloading virtualenv-20.23.0-py3-none-any.whl (3.3 MB)
+2023-05-12T06:41:02.580820302Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 8.4 MB/s eta 0:00:00
+2023-05-12T06:41:02.626778959Z [34m│[0m Collecting pexpect<5.0.0,>=4.7.0
+2023-05-12T06:41:02.631597399Z [34m│[0m   Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+2023-05-12T06:41:02.643918027Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.0/59.0 kB 5.9 MB/s eta 0:00:00
+2023-05-12T06:41:02.695185106Z [34m│[0m Collecting platformdirs<3.0.0,>=2.5.2
+2023-05-12T06:41:02.699680272Z [34m│[0m   Downloading platformdirs-2.6.2-py3-none-any.whl (14 kB)
+2023-05-12T06:41:02.751140815Z [34m│[0m Collecting poetry-plugin-export<2.0.0,>=1.3.0
+2023-05-12T06:41:02.756225631Z [34m│[0m   Downloading poetry_plugin_export-1.3.1-py3-none-any.whl (10 kB)
+2023-05-12T06:41:02.791817656Z [34m│[0m Collecting crashtest<0.5.0,>=0.4.1
+2023-05-12T06:41:02.796686079Z [34m│[0m   Downloading crashtest-0.4.1-py3-none-any.whl (7.6 kB)
+2023-05-12T06:41:02.856862581Z [34m│[0m Collecting shellingham<2.0,>=1.5
+2023-05-12T06:41:02.861619395Z [34m│[0m   Downloading shellingham-1.5.0.post1-py2.py3-none-any.whl (9.4 kB)
+2023-05-12T06:41:02.902949018Z [34m│[0m Collecting html5lib<2.0,>=1.0
+2023-05-12T06:41:02.907688567Z [34m│[0m   Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+2023-05-12T06:41:02.922734403Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.2/112.2 kB 11.9 MB/s eta 0:00:00
+2023-05-12T06:41:02.969896307Z [34m│[0m Collecting cachecontrol[filecache]<0.13.0,>=0.12.9
+2023-05-12T06:41:02.974394728Z [34m│[0m   Downloading CacheControl-0.12.11-py2.py3-none-any.whl (21 kB)
+2023-05-12T06:41:03.020782104Z [34m│[0m Collecting installer<0.8.0,>=0.7.0
+2023-05-12T06:41:03.029865779Z [34m│[0m   Downloading installer-0.7.0-py3-none-any.whl (453 kB)
+2023-05-12T06:41:03.059735107Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 453.8/453.8 kB 20.5 MB/s eta 0:00:00
+2023-05-12T06:41:03.198240811Z [34m│[0m Collecting keyring<24.0.0,>=23.9.0
+2023-05-12T06:41:03.202909923Z [34m│[0m   Downloading keyring-23.13.1-py3-none-any.whl (37 kB)
+2023-05-12T06:41:03.244224809Z [34m│[0m Collecting lockfile<0.13.0,>=0.12.2
+2023-05-12T06:41:03.249438401Z [34m│[0m   Downloading lockfile-0.12.2-py2.py3-none-any.whl (13 kB)
+2023-05-12T06:41:03.710414434Z [34m│[0m Collecting dulwich<0.22.0,>=0.21.2
+2023-05-12T06:41:03.724248502Z [34m│[0m   Downloading dulwich-0.21.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (510 kB)
+2023-05-12T06:41:03.780906173Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 510.1/510.1 kB 10.0 MB/s eta 0:00:00
+2023-05-12T06:41:03.828944945Z [34m│[0m Collecting requests-toolbelt<0.11.0,>=0.9.1
+2023-05-12T06:41:03.836361867Z [34m│[0m   Downloading requests_toolbelt-0.10.1-py2.py3-none-any.whl (54 kB)
+2023-05-12T06:41:03.851920965Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 4.1 MB/s eta 0:00:00
+2023-05-12T06:41:03.901805146Z [34m│[0m Collecting build<0.11.0,>=0.10.0
+2023-05-12T06:41:03.909235287Z [34m│[0m   Downloading build-0.10.0-py3-none-any.whl (17 kB)
+2023-05-12T06:41:04.253039968Z [34m│[0m Collecting packaging>=20.4
+2023-05-12T06:41:04.259144400Z [34m│[0m   Downloading packaging-23.1-py3-none-any.whl (48 kB)
+2023-05-12T06:41:04.282535780Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 2.6 MB/s eta 0:00:00
+2023-05-12T06:41:04.342903257Z [34m│[0m Collecting cleo<3.0.0,>=2.0.0
+2023-05-12T06:41:04.347538857Z [34m│[0m   Downloading cleo-2.0.1-py3-none-any.whl (77 kB)
+2023-05-12T06:41:04.377929662Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.3/77.3 kB 3.3 MB/s eta 0:00:00
+2023-05-12T06:41:04.489453247Z [34m│[0m Collecting urllib3<2.0.0,>=1.26.0
+2023-05-12T06:41:04.496618628Z [34m│[0m   Downloading urllib3-1.26.15-py2.py3-none-any.whl (140 kB)
+2023-05-12T06:41:04.534670275Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.9/140.9 kB 3.9 MB/s eta 0:00:00
+2023-05-12T06:41:04.582111832Z [34m│[0m Collecting tomli<3.0.0,>=2.0.1
+2023-05-12T06:41:04.588814466Z [34m│[0m   Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+2023-05-12T06:41:04.687733680Z [34m│[0m Collecting jsonschema<5.0.0,>=4.10.0
+2023-05-12T06:41:04.694836974Z [34m│[0m   Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+2023-05-12T06:41:04.717452985Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.4/90.4 kB 4.6 MB/s eta 0:00:00
+2023-05-12T06:41:04.835477863Z [34m│[0m Collecting requests<3.0,>=2.18
+2023-05-12T06:41:04.842644883Z [34m│[0m   Downloading requests-2.30.0-py3-none-any.whl (62 kB)
+2023-05-12T06:41:04.865986295Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.5/62.5 kB 2.9 MB/s eta 0:00:00
+2023-05-12T06:41:04.892214267Z [34m│[0m Collecting pyproject-hooks<2.0.0,>=1.0.0
+2023-05-12T06:41:04.896924044Z [34m│[0m   Downloading pyproject_hooks-1.0.0-py3-none-any.whl (9.3 kB)
+2023-05-12T06:41:05.275388125Z [34m│[0m Collecting msgpack>=0.5.2
+2023-05-12T06:41:05.282032663Z [34m│[0m   Downloading msgpack-1.0.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (316 kB)
+2023-05-12T06:41:05.331724155Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 316.8/316.8 kB 7.1 MB/s eta 0:00:00
+2023-05-12T06:41:08.785736371Z [34m│[0m Collecting rapidfuzz<3.0.0,>=2.2.0
+2023-05-12T06:41:08.795100550Z [34m│[0m   Downloading rapidfuzz-2.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+2023-05-12T06:41:09.094748752Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 10.3 MB/s eta 0:00:00
+2023-05-12T06:41:09.214762312Z [34m│[0m Collecting six>=1.9
+2023-05-12T06:41:09.218840895Z [34m│[0m   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2023-05-12T06:41:09.251886172Z [34m│[0m Collecting webencodings
+2023-05-12T06:41:09.259038429Z [34m│[0m   Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+2023-05-12T06:41:09.389704269Z [34m│[0m Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+2023-05-12T06:41:09.393868511Z [34m│[0m   Downloading pyrsistent-0.19.3-py3-none-any.whl (57 kB)
+2023-05-12T06:41:09.408187843Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 4.7 MB/s eta 0:00:00
+2023-05-12T06:41:09.455667430Z [34m│[0m Collecting attrs>=17.4.0
+2023-05-12T06:41:09.460445210Z [34m│[0m   Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+2023-05-12T06:41:09.470672112Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 7.8 MB/s eta 0:00:00
+2023-05-12T06:41:09.684571994Z [34m│[0m Collecting importlib-metadata>=4.11.4
+2023-05-12T06:41:09.689723263Z [34m│[0m   Downloading importlib_metadata-6.6.0-py3-none-any.whl (22 kB)
+2023-05-12T06:41:09.738943724Z [34m│[0m Collecting SecretStorage>=3.2
+2023-05-12T06:41:09.745663349Z [34m│[0m   Downloading SecretStorage-3.3.3-py3-none-any.whl (15 kB)
+2023-05-12T06:41:09.794303281Z [34m│[0m Collecting jeepney>=0.4.2
+2023-05-12T06:41:09.801182622Z [34m│[0m   Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+2023-05-12T06:41:09.819217253Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 2.9 MB/s eta 0:00:00
+2023-05-12T06:41:09.855723215Z [34m│[0m Collecting jaraco.classes
+2023-05-12T06:41:09.862812072Z [34m│[0m   Downloading jaraco.classes-3.2.3-py3-none-any.whl (6.0 kB)
+2023-05-12T06:41:09.921463923Z [34m│[0m Collecting ptyprocess>=0.5
+2023-05-12T06:41:09.926172492Z [34m│[0m   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+2023-05-12T06:41:10.209089655Z [34m│[0m Collecting charset-normalizer<4,>=2
+2023-05-12T06:41:10.216463319Z [34m│[0m   Downloading charset_normalizer-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (199 kB)
+2023-05-12T06:41:10.233861564Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.3/199.3 kB 14.6 MB/s eta 0:00:00
+2023-05-12T06:41:10.278065121Z [34m│[0m Collecting idna<4,>=2.5
+2023-05-12T06:41:10.282890019Z [34m│[0m   Downloading idna-3.4-py3-none-any.whl (61 kB)
+2023-05-12T06:41:10.296537362Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 5.2 MB/s eta 0:00:00
+2023-05-12T06:41:10.354483303Z [34m│[0m Collecting certifi>=2017.4.17
+2023-05-12T06:41:10.357927323Z [34m│[0m   Downloading certifi-2023.5.7-py3-none-any.whl (156 kB)
+2023-05-12T06:41:10.373708862Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.0/157.0 kB 13.2 MB/s eta 0:00:00
+2023-05-12T06:41:10.553434850Z [34m│[0m Collecting virtualenv!=20.4.5,!=20.4.6,<21.0.0,>=20.4.3
+2023-05-12T06:41:10.558760757Z [34m│[0m   Downloading virtualenv-20.22.0-py3-none-any.whl (3.2 MB)
+2023-05-12T06:41:10.853966892Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 11.2 MB/s eta 0:00:00
+2023-05-12T06:41:10.914027936Z [34m│[0m   Downloading virtualenv-20.21.1-py3-none-any.whl (8.7 MB)
+2023-05-12T06:41:11.674375459Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 11.6 MB/s eta 0:00:00
+2023-05-12T06:41:11.776722836Z [34m│[0m Collecting distlib<1,>=0.3.6
+2023-05-12T06:41:11.780098906Z [34m│[0m   Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+2023-05-12T06:41:11.799031633Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.5/468.5 kB 31.7 MB/s eta 0:00:00
+2023-05-12T06:41:11.990413299Z [34m│[0m Collecting zipp>=0.5
+2023-05-12T06:41:11.994955508Z [34m│[0m   Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+2023-05-12T06:41:12.689194463Z [34m│[0m Collecting cryptography>=2.0
+2023-05-12T06:41:12.694743248Z [34m│[0m   Downloading cryptography-40.0.2-cp36-abi3-manylinux_2_28_x86_64.whl (3.7 MB)
+2023-05-12T06:41:12.864405416Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 22.5 MB/s eta 0:00:00
+2023-05-12T06:41:12.984118888Z [34m│[0m Collecting more-itertools
+2023-05-12T06:41:12.988645459Z [34m│[0m   Downloading more_itertools-9.1.0-py3-none-any.whl (54 kB)
+2023-05-12T06:41:13.000751546Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.2/54.2 kB 5.7 MB/s eta 0:00:00
+2023-05-12T06:41:13.500181115Z [34m│[0m Collecting cffi>=1.12
+2023-05-12T06:41:13.508110219Z [34m│[0m   Downloading cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+2023-05-12T06:41:13.528927104Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.8/441.8 kB 29.3 MB/s eta 0:00:00
+2023-05-12T06:41:13.621699224Z [34m│[0m Collecting pycparser
+2023-05-12T06:41:13.626225068Z [34m│[0m   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+2023-05-12T06:41:13.638128305Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 14.6 MB/s eta 0:00:00
+2023-05-12T06:41:14.196514477Z [34m│[0m Installing collected packages: webencodings, trove-classifiers, ptyprocess, msgpack, lockfile, distlib, zipp, urllib3, tomlkit, tomli, six, shellingham, rapidfuzz, pyrsistent, pycparser, poetry-core, platformdirs, pkginfo, pexpect, packaging, more-itertools, jeepney, installer, idna, filelock, crashtest, charset-normalizer, certifi, attrs, virtualenv, requests, pyproject-hooks, jsonschema, jaraco.classes, importlib-metadata, html5lib, dulwich, cleo, cffi, requests-toolbelt, cryptography, cachecontrol, build, SecretStorage, keyring, poetry-plugin-export, poetry
+2023-05-12T06:41:20.839223843Z [34m│[0m Successfully installed SecretStorage-3.3.3 attrs-23.1.0 build-0.10.0 cachecontrol-0.12.11 certifi-2023.5.7 cffi-1.15.1 charset-normalizer-3.1.0 cleo-2.0.1 crashtest-0.4.1 cryptography-40.0.2 distlib-0.3.6 dulwich-0.21.5 filelock-3.12.0 html5lib-1.1 idna-3.4 importlib-metadata-6.6.0 installer-0.7.0 jaraco.classes-3.2.3 jeepney-0.8.0 jsonschema-4.17.3 keyring-23.13.1 lockfile-0.12.2 more-itertools-9.1.0 msgpack-1.0.5 packaging-23.1 pexpect-4.8.0 pkginfo-1.9.6 platformdirs-2.6.2 poetry-1.4.2 poetry-core-1.5.2 poetry-plugin-export-1.3.1 ptyprocess-0.7.0 pycparser-2.21 pyproject-hooks-1.0.0 pyrsistent-0.19.3 rapidfuzz-2.15.1 requests-2.30.0 requests-toolbelt-0.10.1 shellingham-1.5.0.post1 six-1.16.0 tomli-2.0.1 tomlkit-0.11.8 trove-classifiers-2023.5.2 urllib3-1.26.15 virtualenv-20.21.1 webencodings-0.5.1 zipp-3.15.0
+2023-05-12T06:41:20.839915102Z [34m│[0m WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-05-12T06:41:21.009761287Z [34m│[0m 
+2023-05-12T06:41:21.009802952Z [34m│[0m [notice] A new release of pip is available: 23.0.1 -> 23.1.2
+2023-05-12T06:41:21.009808266Z [34m│[0m [notice] To update, run: pip install --upgrade pip
+2023-05-12T06:41:22.431203995Z [34m│[0m [36mINFO[0m[0081] Taking snapshot of files...                  
+2023-05-12T06:41:27.695272898Z [34m│[0m [36mINFO[0m[0086] Pushing layer <registry-uri-2> to cache now 
+2023-05-12T06:41:27.695615853Z [34m│[0m [36mINFO[0m[0086] Pushing image to <registry-uri-3> 
+2023-05-12T06:41:28.416412796Z [34m│[0m [36mINFO[0m[0087] Resolving srcs [pyproject.toml poetry.lock*]... 
+2023-05-12T06:41:28.419813582Z [34m│[0m [36mINFO[0m[0087] COPY ./pyproject.toml ./poetry.lock* /tmp/   
+2023-05-12T06:41:28.419832100Z [34m│[0m [36mINFO[0m[0087] Resolving srcs [pyproject.toml poetry.lock*]... 
+2023-05-12T06:41:28.443400708Z [34m│[0m [36mINFO[0m[0087] Taking snapshot of files...                  
+2023-05-12T06:41:28.462037963Z [34m│[0m [36mINFO[0m[0087] RUN poetry export -f requirements.txt --output requirements.txt --without-hashes 
+2023-05-12T06:41:29.995022681Z [34m│[0m [36mINFO[0m[0089] Cmd: /bin/sh                                 
+2023-05-12T06:41:29.995051635Z [34m│[0m [36mINFO[0m[0089] Args: [-c poetry export -f requirements.txt --output requirements.txt --without-hashes] 
+2023-05-12T06:41:29.995325379Z [34m│[0m [36mINFO[0m[0089] Running: [/bin/sh -c poetry export -f requirements.txt --output requirements.txt --without-hashes] 
+2023-05-12T06:41:38.781460009Z [34m│[0m [36mINFO[0m[0098] Taking snapshot of files...                  
+2023-05-12T06:41:38.958765861Z [34m│[0m [36mINFO[0m[0098] Pushing layer <registry-uri-4> to cache now 
+2023-05-12T06:41:38.959211665Z [34m│[0m [36mINFO[0m[0098] Pushing image to <registry-uri-5> 
+2023-05-12T06:41:40.656009580Z [34m│[0m [36mINFO[0m[0099] Pushed <registry-uri-6> 
+2023-05-12T06:41:41.579560391Z [34m│[0m [36mINFO[0m[0100] Pushed <registry-uri-7> 
+2023-05-12T06:41:41.581207350Z [34m│[0m [36mINFO[0m[0100] Saving file tmp/requirements.txt for later use 
+2023-05-12T06:41:41.581711261Z [34m│[0m [36mINFO[0m[0100] Deleting filesystem...                       
+2023-05-12T06:41:42.435562398Z [34m│[0m [36mINFO[0m[0101] Retrieving image manifest python:3.10        
+2023-05-12T06:41:42.435593134Z [34m│[0m [36mINFO[0m[0101] Returning cached image manifest              
+2023-05-12T06:41:42.435937525Z [34m│[0m [36mINFO[0m[0101] Retrieving image manifest python:3.10        
+2023-05-12T06:41:42.435948257Z [34m│[0m [36mINFO[0m[0101] Returning cached image manifest              
+2023-05-12T06:41:42.441890936Z [34m│[0m [36mINFO[0m[0101] Executing 0 build triggers                   
+2023-05-12T06:41:42.441912565Z [34m│[0m [36mINFO[0m[0101] Building stage 'python:3.10' [idx: '1', base-idx: '-1'] 
+2023-05-12T06:41:42.441921475Z [34m│[0m [36mINFO[0m[0101] Checking for cached layer <registry-uri-8> 
+2023-05-12T06:41:42.713478517Z [34m│[0m [36mINFO[0m[0102] No cached layer found for cmd RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt 
+2023-05-12T06:41:42.729367584Z [34m│[0m [36mINFO[0m[0102] Unpacking rootfs as cmd COPY --from=requirements-stage /tmp/requirements.txt /code/requirements.txt requires it. 
+2023-05-12T06:42:00.739723438Z [34m│[0m [36mINFO[0m[0120] Initializing snapshotter ...                 
+2023-05-12T06:42:00.739755168Z [34m│[0m [36mINFO[0m[0120] Taking snapshot of full filesystem...        
+2023-05-12T06:42:08.369461089Z [34m│[0m [36mINFO[0m[0127] WORKDIR /code                                
+2023-05-12T06:42:08.369494625Z [34m│[0m [36mINFO[0m[0127] Cmd: workdir                                 
+2023-05-12T06:42:08.369498818Z [34m│[0m [36mINFO[0m[0127] Changed working directory to /code           
+2023-05-12T06:42:08.369501842Z [34m│[0m [36mINFO[0m[0127] Creating directory /code                     
+2023-05-12T06:42:08.378648980Z [34m│[0m [36mINFO[0m[0127] Taking snapshot of files...                  
+2023-05-12T06:42:08.379264446Z [34m│[0m [36mINFO[0m[0127] COPY --from=requirements-stage /tmp/requirements.txt /code/requirements.txt 
+2023-05-12T06:42:08.388668410Z [34m│[0m [36mINFO[0m[0127] Taking snapshot of files...                  
+2023-05-12T06:42:08.389566881Z [34m│[0m [36mINFO[0m[0127] RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt 
+2023-05-12T06:42:09.061640870Z [34m│[0m [36mINFO[0m[0128] Cmd: /bin/sh                                 
+2023-05-12T06:42:09.061681809Z [34m│[0m [36mINFO[0m[0128] Args: [-c pip install --no-cache-dir --upgrade -r /code/requirements.txt] 
+2023-05-12T06:42:09.061688117Z [34m│[0m [36mINFO[0m[0128] Running: [/bin/sh -c pip install --no-cache-dir --upgrade -r /code/requirements.txt] 
+2023-05-12T06:42:11.312396173Z [34m│[0m Looking in indexes: https://pypi.org/simple, https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple
+2023-05-12T06:42:11.315999256Z [34m│[0m Ignoring colorama: markers 'python_version >= "3.10" and python_version < "4.0" and platform_system == "Windows" or python_version >= "3.10" and python_version < "4.0" and sys_platform == "win32"' don't match your environment
+2023-05-12T06:42:11.326512057Z [34m│[0m Ignoring pywin32: markers 'python_version >= "3.10" and platform_system == "Windows" and python_version < "4.0"' don't match your environment
+2023-05-12T06:42:11.332279549Z [34m│[0m Ignoring win32-setctime: markers 'python_version >= "3.10" and python_version < "4.0" and sys_platform == "win32"' don't match your environment
+2023-05-12T06:42:12.766409297Z [34m│[0m Collecting aiohttp==3.8.4
+2023-05-12T06:42:12.798959720Z [34m│[0m   Downloading aiohttp-3.8.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+2023-05-12T06:42:12.814640072Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 90.8 MB/s eta 0:00:00
+2023-05-12T06:42:12.977540290Z [34m│[0m Collecting aiosignal==1.3.1
+2023-05-12T06:42:12.981747193Z [34m│[0m   Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+2023-05-12T06:42:13.160714089Z [34m│[0m Collecting anyio==3.6.2
+2023-05-12T06:42:13.164861655Z [34m│[0m   Downloading anyio-3.6.2-py3-none-any.whl (80 kB)
+2023-05-12T06:42:13.168974523Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 kB 226.0 MB/s eta 0:00:00
+2023-05-12T06:42:13.359965980Z [34m│[0m Collecting arrow==1.2.3
+2023-05-12T06:42:13.363552273Z [34m│[0m   Downloading arrow-1.2.3-py3-none-any.whl (66 kB)
+2023-05-12T06:42:13.367678791Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 198.4 MB/s eta 0:00:00
+2023-05-12T06:42:13.528205132Z [34m│[0m Collecting async-timeout==4.0.2
+2023-05-12T06:42:13.532608044Z [34m│[0m   Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+2023-05-12T06:42:13.701426677Z [34m│[0m Collecting attrs==23.1.0
+2023-05-12T06:42:13.705522819Z [34m│[0m   Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+2023-05-12T06:42:13.709480441Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 199.5 MB/s eta 0:00:00
+2023-05-12T06:42:13.941226923Z [34m│[0m Collecting authlib==1.2.0
+2023-05-12T06:42:13.947001957Z [34m│[0m   Downloading Authlib-1.2.0-py2.py3-none-any.whl (214 kB)
+2023-05-12T06:42:13.951947433Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.8/214.8 kB 240.1 MB/s eta 0:00:00
+2023-05-12T06:42:14.720256561Z [34m│[0m Collecting azure-common==1.1.28
+2023-05-12T06:42:15.444447261Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/azure-common/1.1.28/azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+2023-05-12T06:42:16.339513211Z [34m│[0m Collecting azure-core==1.26.4
+2023-05-12T06:42:17.339964083Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/azure-core/1.26.4/azure_core-1.26.4-py3-none-any.whl (173 kB)
+2023-05-12T06:42:17.385285023Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.9/173.9 kB 4.0 MB/s eta 0:00:00
+2023-05-12T06:42:18.443632497Z [34m│[0m Collecting azure-identity==1.12.0
+2023-05-12T06:42:19.473068107Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/azure-identity/1.12/azure_identity-1.12.0-py3-none-any.whl (135 kB)
+2023-05-12T06:42:19.513332482Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.5/135.5 kB 3.5 MB/s eta 0:00:00
+2023-05-12T06:42:20.496893006Z [34m│[0m Collecting azure-search-documents==11.4.0a20230509004
+2023-05-12T06:42:21.519216240Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/azure-search-documents/11.4a20230509004/azure_search_documents-11.4.0a20230509004-py3-none-any.whl (304 kB)
+2023-05-12T06:42:21.724697905Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 304.5/304.5 kB 1.5 MB/s eta 0:00:00
+2023-05-12T06:42:21.931646457Z [34m│[0m Collecting backoff==2.2.1
+2023-05-12T06:42:21.935896829Z [34m│[0m   Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+2023-05-12T06:42:22.117002698Z [34m│[0m Collecting blobfile==2.0.2
+2023-05-12T06:42:22.122516649Z [34m│[0m   Downloading blobfile-2.0.2-py3-none-any.whl (74 kB)
+2023-05-12T06:42:22.126799901Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.5/74.5 kB 210.8 MB/s eta 0:00:00
+2023-05-12T06:42:22.305375328Z [34m│[0m Collecting certifi==2023.5.7
+2023-05-12T06:42:22.315755013Z [34m│[0m   Downloading certifi-2023.5.7-py3-none-any.whl (156 kB)
+2023-05-12T06:42:22.320555558Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.0/157.0 kB 182.6 MB/s eta 0:00:00
+2023-05-12T06:42:22.863456765Z [34m│[0m Collecting cffi==1.15.1
+2023-05-12T06:42:23.895993250Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/cffi/1.15.1/cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+2023-05-12T06:42:24.104075115Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.8/441.8 kB 2.1 MB/s eta 0:00:00
+2023-05-12T06:42:24.459766485Z [34m│[0m Collecting charset-normalizer==3.1.0
+2023-05-12T06:42:25.510058706Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/charset-normalizer/3.1/charset_normalizer-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (199 kB)
+2023-05-12T06:42:25.614527566Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.3/199.3 kB 1.9 MB/s eta 0:00:00
+2023-05-12T06:42:25.810766346Z [34m│[0m Collecting chromadb==0.3.22
+2023-05-12T06:42:25.815166070Z [34m│[0m   Downloading chromadb-0.3.22-py3-none-any.whl (69 kB)
+2023-05-12T06:42:25.819765443Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.2/69.2 kB 171.5 MB/s eta 0:00:00
+2023-05-12T06:42:26.004272084Z [34m│[0m Collecting click==8.1.3
+2023-05-12T06:42:26.011530793Z [34m│[0m   Downloading click-8.1.3-py3-none-any.whl (96 kB)
+2023-05-12T06:42:26.016516262Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 187.2 MB/s eta 0:00:00
+2023-05-12T06:42:27.054125248Z [34m│[0m Collecting clickhouse-connect==0.5.23
+2023-05-12T06:42:27.063334700Z [34m│[0m   Downloading clickhouse_connect-0.5.23-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (922 kB)
+2023-05-12T06:42:27.074778576Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 922.4/922.4 kB 133.4 MB/s eta 0:00:00
+2023-05-12T06:42:27.817693052Z [34m│[0m Collecting cryptography==40.0.2
+2023-05-12T06:42:27.822052264Z [34m│[0m   Downloading cryptography-40.0.2-cp36-abi3-manylinux_2_28_x86_64.whl (3.7 MB)
+2023-05-12T06:42:27.846707594Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 201.8 MB/s eta 0:00:00
+2023-05-12T06:42:28.076325656Z [34m│[0m Collecting dataclasses-json==0.5.7
+2023-05-12T06:42:28.081258022Z [34m│[0m   Downloading dataclasses_json-0.5.7-py3-none-any.whl (25 kB)
+2023-05-12T06:42:28.255177705Z [34m│[0m Collecting decorator==5.1.1
+2023-05-12T06:42:28.259595914Z [34m│[0m   Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+2023-05-12T06:42:28.423658753Z [34m│[0m Collecting dnspython==2.3.0
+2023-05-12T06:42:28.430491512Z [34m│[0m   Downloading dnspython-2.3.0-py3-none-any.whl (283 kB)
+2023-05-12T06:42:28.436121407Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 283.7/283.7 kB 173.8 MB/s eta 0:00:00
+2023-05-12T06:42:28.592548726Z [34m│[0m Collecting docx2txt==0.8
+2023-05-12T06:42:28.598001626Z [34m│[0m   Downloading docx2txt-0.8.tar.gz (2.8 kB)
+2023-05-12T06:42:28.603262174Z [34m│[0m   Preparing metadata (setup.py): started
+2023-05-12T06:42:29.288174303Z [34m│[0m   Preparing metadata (setup.py): finished with status 'done'
+2023-05-12T06:42:29.829748755Z [34m│[0m Collecting duckdb==0.7.1
+2023-05-12T06:42:29.838577821Z [34m│[0m   Downloading duckdb-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.2 MB)
+2023-05-12T06:42:30.006078732Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 77.7 MB/s eta 0:00:00
+2023-05-12T06:42:30.226370032Z [34m│[0m Collecting environs==9.5.0
+2023-05-12T06:42:30.232859356Z [34m│[0m   Downloading environs-9.5.0-py2.py3-none-any.whl (12 kB)
+2023-05-12T06:42:30.501949303Z [34m│[0m Collecting fastapi==0.92.0
+2023-05-12T06:42:30.508329197Z [34m│[0m   Downloading fastapi-0.92.0-py3-none-any.whl (56 kB)
+2023-05-12T06:42:30.512848528Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.2/56.2 kB 203.7 MB/s eta 0:00:00
+2023-05-12T06:42:30.691789380Z [34m│[0m Collecting filelock==3.12.0
+2023-05-12T06:42:30.696339679Z [34m│[0m   Downloading filelock-3.12.0-py3-none-any.whl (10 kB)
+2023-05-12T06:42:30.988958251Z [34m│[0m Collecting frozenlist==1.3.3
+2023-05-12T06:42:30.994954335Z [34m│[0m   Downloading frozenlist-1.3.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (149 kB)
+2023-05-12T06:42:30.999514840Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.6/149.6 kB 222.8 MB/s eta 0:00:00
+2023-05-12T06:42:31.190960939Z [34m│[0m Collecting fsspec==2023.5.0
+2023-05-12T06:42:31.218401028Z [34m│[0m   Downloading fsspec-2023.5.0-py3-none-any.whl (160 kB)
+2023-05-12T06:42:31.223245624Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.1/160.1 kB 240.3 MB/s eta 0:00:00
+2023-05-12T06:42:31.730243570Z [34m│[0m Collecting greenlet==2.0.2
+2023-05-12T06:42:31.736595478Z [34m│[0m   Downloading greenlet-2.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (613 kB)
+2023-05-12T06:42:31.743308552Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 613.7/613.7 kB 244.6 MB/s eta 0:00:00
+2023-05-12T06:42:33.566529754Z [34m│[0m Collecting grpcio-tools==1.53.0
+2023-05-12T06:42:33.572934365Z [34m│[0m   Downloading grpcio_tools-1.53.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+2023-05-12T06:42:33.587082146Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 221.8 MB/s eta 0:00:00
+2023-05-12T06:42:35.378169256Z [34m│[0m Collecting grpcio==1.53.0
+2023-05-12T06:42:35.393928552Z [34m│[0m   Downloading grpcio-1.53.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.0 MB)
+2023-05-12T06:42:35.418664747Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 233.2 MB/s eta 0:00:00
+2023-05-12T06:42:35.592059133Z [34m│[0m Collecting h11==0.14.0
+2023-05-12T06:42:35.596531074Z [34m│[0m   Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+2023-05-12T06:42:35.600717703Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 196.4 MB/s eta 0:00:00
+2023-05-12T06:42:35.807054690Z [34m│[0m Collecting h2==4.1.0
+2023-05-12T06:42:35.811459554Z [34m│[0m   Downloading h2-4.1.0-py3-none-any.whl (57 kB)
+2023-05-12T06:42:35.815867160Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 183.7 MB/s eta 0:00:00
+2023-05-12T06:42:35.965837322Z [34m│[0m Collecting hnswlib==0.7.0
+2023-05-12T06:42:35.971095379Z [34m│[0m   Downloading hnswlib-0.7.0.tar.gz (33 kB)
+2023-05-12T06:42:35.988681642Z [34m│[0m   Installing build dependencies: started
+2023-05-12T06:42:43.628249868Z [34m│[0m   Installing build dependencies: finished with status 'done'
+2023-05-12T06:42:43.629358282Z [34m│[0m   Getting requirements to build wheel: started
+2023-05-12T06:42:43.971421942Z [34m│[0m   Getting requirements to build wheel: finished with status 'done'
+2023-05-12T06:42:43.974293754Z [34m│[0m   Preparing metadata (pyproject.toml): started
+2023-05-12T06:42:44.317359765Z [34m│[0m   Preparing metadata (pyproject.toml): finished with status 'done'
+2023-05-12T06:42:44.475491133Z [34m│[0m Collecting hpack==4.0.0
+2023-05-12T06:42:44.481295493Z [34m│[0m   Downloading hpack-4.0.0-py3-none-any.whl (32 kB)
+2023-05-12T06:42:44.681663884Z [34m│[0m Collecting httpcore==0.16.3
+2023-05-12T06:42:44.686252495Z [34m│[0m   Downloading httpcore-0.16.3-py3-none-any.whl (69 kB)
+2023-05-12T06:42:44.690461967Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 157.8 MB/s eta 0:00:00
+2023-05-12T06:42:44.907923005Z [34m│[0m Collecting httptools==0.5.0
+2023-05-12T06:42:44.916923402Z [34m│[0m   Downloading httptools-0.5.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (414 kB)
+2023-05-12T06:42:44.922482476Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 414.1/414.1 kB 232.1 MB/s eta 0:00:00
+2023-05-12T06:42:45.113491653Z [34m│[0m Collecting httpx[http2]==0.23.3
+2023-05-12T06:42:45.117453252Z [34m│[0m   Downloading httpx-0.23.3-py3-none-any.whl (71 kB)
+2023-05-12T06:42:45.121798014Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.5/71.5 kB 213.3 MB/s eta 0:00:00
+2023-05-12T06:42:45.322409676Z [34m│[0m Collecting huggingface-hub==0.14.1
+2023-05-12T06:42:45.328852088Z [34m│[0m   Downloading huggingface_hub-0.14.1-py3-none-any.whl (224 kB)
+2023-05-12T06:42:45.334541613Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 248.6 MB/s eta 0:00:00
+2023-05-12T06:42:45.495223740Z [34m│[0m Collecting hyperframe==6.0.1
+2023-05-12T06:42:45.500970796Z [34m│[0m   Downloading hyperframe-6.0.1-py3-none-any.whl (12 kB)
+2023-05-12T06:42:45.662886658Z [34m│[0m Collecting idna==3.4
+2023-05-12T06:42:46.859615054Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/idna/3.4/idna-3.4-py3-none-any.whl (61 kB)
+2023-05-12T06:42:46.874010923Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 5.1 MB/s eta 0:00:00
+2023-05-12T06:42:47.025209457Z [34m│[0m Collecting isodate==0.6.1
+2023-05-12T06:42:47.810176852Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/isodate/0.6.1/isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+2023-05-12T06:42:47.825100804Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 3.0 MB/s eta 0:00:00
+2023-05-12T06:42:48.017724824Z [34m│[0m Collecting jinja2==3.1.2
+2023-05-12T06:42:48.023122248Z [34m│[0m   Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+2023-05-12T06:42:48.027739700Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 238.4 MB/s eta 0:00:00
+2023-05-12T06:42:48.237628413Z [34m│[0m Collecting joblib==1.2.0
+2023-05-12T06:42:48.244446778Z [34m│[0m   Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
+2023-05-12T06:42:48.250007929Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 298.0/298.0 kB 243.4 MB/s eta 0:00:00
+2023-05-12T06:42:48.539152230Z [34m│[0m Collecting langchain==0.0.162
+2023-05-12T06:42:48.547452683Z [34m│[0m   Downloading langchain-0.0.162-py3-none-any.whl (770 kB)
+2023-05-12T06:42:48.555119232Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.9/770.9 kB 238.6 MB/s eta 0:00:00
+2023-05-12T06:42:48.741696712Z [34m│[0m Collecting llama-index==0.5.4
+2023-05-12T06:42:48.750243492Z [34m│[0m   Downloading llama_index-0.5.4.tar.gz (162 kB)
+2023-05-12T06:42:48.754982119Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.6/162.6 kB 204.5 MB/s eta 0:00:00
+2023-05-12T06:42:48.867979609Z [34m│[0m   Preparing metadata (setup.py): started
+2023-05-12T06:42:49.214131762Z [34m│[0m   Preparing metadata (setup.py): finished with status 'done'
+2023-05-12T06:42:49.376690118Z [34m│[0m Collecting loguru==0.7.0
+2023-05-12T06:42:49.410097530Z [34m│[0m   Downloading loguru-0.7.0-py3-none-any.whl (59 kB)
+2023-05-12T06:42:49.414447747Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 204.4 MB/s eta 0:00:00
+2023-05-12T06:42:50.043962264Z [34m│[0m Collecting lxml==4.9.2
+2023-05-12T06:42:50.052915242Z [34m│[0m   Downloading lxml-4.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (7.1 MB)
+2023-05-12T06:42:50.101863879Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 157.4 MB/s eta 0:00:00
+2023-05-12T06:42:50.539446817Z [34m│[0m Collecting lz4==4.3.2
+2023-05-12T06:42:50.549304499Z [34m│[0m   Downloading lz4-4.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+2023-05-12T06:42:50.558523951Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 230.9 MB/s eta 0:00:00
+2023-05-12T06:42:50.962233781Z [34m│[0m Collecting markupsafe==2.1.2
+2023-05-12T06:42:50.966936976Z [34m│[0m   Downloading MarkupSafe-2.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+2023-05-12T06:42:51.125044789Z [34m│[0m Collecting marshmallow-enum==1.5.1
+2023-05-12T06:42:51.130216414Z [34m│[0m   Downloading marshmallow_enum-1.5.1-py2.py3-none-any.whl (4.2 kB)
+2023-05-12T06:42:51.380082455Z [34m│[0m Collecting marshmallow==3.19.0
+2023-05-12T06:42:51.384553704Z [34m│[0m   Downloading marshmallow-3.19.0-py3-none-any.whl (49 kB)
+2023-05-12T06:42:51.389112376Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 kB 210.6 MB/s eta 0:00:00
+2023-05-12T06:42:51.545025327Z [34m│[0m Collecting monotonic==1.6
+2023-05-12T06:42:51.550858558Z [34m│[0m   Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+2023-05-12T06:42:51.709086770Z [34m│[0m Collecting mpmath==1.3.0
+2023-05-12T06:42:51.715908062Z [34m│[0m   Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2023-05-12T06:42:51.722113257Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 256.8 MB/s eta 0:00:00
+2023-05-12T06:42:51.878894148Z [34m│[0m Collecting msal-extensions==1.0.0
+2023-05-12T06:42:51.883693564Z [34m│[0m   Downloading msal_extensions-1.0.0-py2.py3-none-any.whl (19 kB)
+2023-05-12T06:42:52.084454523Z [34m│[0m Collecting msal==1.22.0
+2023-05-12T06:42:52.090467561Z [34m│[0m   Downloading msal-1.22.0-py2.py3-none-any.whl (90 kB)
+2023-05-12T06:42:52.094730253Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 171.4 MB/s eta 0:00:00
+2023-05-12T06:42:52.920676274Z [34m│[0m Collecting multidict==6.0.4
+2023-05-12T06:42:52.927176703Z [34m│[0m   Downloading multidict-6.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
+2023-05-12T06:42:52.931560299Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.5/114.5 kB 235.3 MB/s eta 0:00:00
+2023-05-12T06:42:53.096810260Z [34m│[0m Collecting mypy-extensions==1.0.0
+2023-05-12T06:42:53.101196316Z [34m│[0m   Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+2023-05-12T06:42:53.302898552Z [34m│[0m Collecting networkx==3.1
+2023-05-12T06:42:53.310275223Z [34m│[0m   Downloading networkx-3.1-py3-none-any.whl (2.1 MB)
+2023-05-12T06:42:53.323359852Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 225.1 MB/s eta 0:00:00
+2023-05-12T06:42:53.877785185Z [34m│[0m Collecting nltk==3.8.1
+2023-05-12T06:42:53.886078474Z [34m│[0m   Downloading nltk-3.8.1-py3-none-any.whl (1.5 MB)
+2023-05-12T06:42:53.896528392Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 232.9 MB/s eta 0:00:00
+2023-05-12T06:42:54.242202772Z [34m│[0m Collecting numexpr==2.8.4
+2023-05-12T06:42:54.249401875Z [34m│[0m   Downloading numexpr-2.8.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (381 kB)
+2023-05-12T06:42:54.254714966Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.4/381.4 kB 232.2 MB/s eta 0:00:00
+2023-05-12T06:42:54.991237724Z [34m│[0m Collecting numpy==1.24.3
+2023-05-12T06:42:54.999908535Z [34m│[0m   Downloading numpy-1.24.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+2023-05-12T06:42:55.121646026Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 143.6 MB/s eta 0:00:00
+2023-05-12T06:42:55.368771876Z [34m│[0m Collecting openai==0.27.6
+2023-05-12T06:42:55.373139346Z [34m│[0m   Downloading openai-0.27.6-py3-none-any.whl (71 kB)
+2023-05-12T06:42:55.377552415Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.9/71.9 kB 212.4 MB/s eta 0:00:00
+2023-05-12T06:42:55.544217023Z [34m│[0m Collecting openapi-schema-pydantic==1.2.4
+2023-05-12T06:42:55.551163905Z [34m│[0m   Downloading openapi_schema_pydantic-1.2.4-py3-none-any.whl (90 kB)
+2023-05-12T06:42:55.555475281Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 153.6 MB/s eta 0:00:00
+2023-05-12T06:42:55.745589082Z [34m│[0m Collecting packaging==23.1
+2023-05-12T06:42:55.750271630Z [34m│[0m   Downloading packaging-23.1-py3-none-any.whl (48 kB)
+2023-05-12T06:42:55.754272793Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 197.6 MB/s eta 0:00:00
+2023-05-12T06:42:56.307232369Z [34m│[0m Collecting pandas==2.0.1
+2023-05-12T06:42:56.314546329Z [34m│[0m   Downloading pandas-2.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+2023-05-12T06:42:56.385754901Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 182.9 MB/s eta 0:00:00
+2023-05-12T06:42:57.193904195Z [34m│[0m Collecting pillow==9.5.0
+2023-05-12T06:42:57.201958142Z [34m│[0m   Downloading Pillow-9.5.0-cp310-cp310-manylinux_2_28_x86_64.whl (3.4 MB)
+2023-05-12T06:42:57.220860392Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 229.6 MB/s eta 0:00:00
+2023-05-12T06:42:57.434711352Z [34m│[0m Collecting pinecone-client==2.2.1
+2023-05-12T06:42:57.441158455Z [34m│[0m   Downloading pinecone_client-2.2.1-py3-none-any.whl (177 kB)
+2023-05-12T06:42:57.445683350Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.2/177.2 kB 243.7 MB/s eta 0:00:00
+2023-05-12T06:42:57.618896002Z [34m│[0m Collecting portalocker==2.7.0
+2023-05-12T06:42:57.623350036Z [34m│[0m   Downloading portalocker-2.7.0-py2.py3-none-any.whl (15 kB)
+2023-05-12T06:42:57.799310978Z [34m│[0m Collecting posthog==3.0.1
+2023-05-12T06:42:57.804985952Z [34m│[0m   Downloading posthog-3.0.1-py2.py3-none-any.whl (37 kB)
+2023-05-12T06:42:58.624736828Z [34m│[0m Collecting protobuf==4.23.0
+2023-05-12T06:42:58.631529500Z [34m│[0m   Downloading protobuf-4.23.0-cp37-abi3-manylinux2014_x86_64.whl (304 kB)
+2023-05-12T06:42:58.636822167Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 304.5/304.5 kB 237.7 MB/s eta 0:00:00
+2023-05-12T06:42:58.795653358Z [34m│[0m Collecting pycparser==2.21
+2023-05-12T06:42:59.838119417Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/pycparser/2.21/pycparser-2.21-py2.py3-none-any.whl (118 kB)
+2023-05-12T06:42:59.868714230Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 4.1 MB/s eta 0:00:00
+2023-05-12T06:43:00.358727935Z [34m│[0m Collecting pycryptodomex==3.17
+2023-05-12T06:43:00.365769194Z [34m│[0m   Downloading pycryptodomex-3.17-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2023-05-12T06:43:00.378812321Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 237.3 MB/s eta 0:00:00
+2023-05-12T06:43:00.874643615Z [34m│[0m Collecting pydantic==1.10.7
+2023-05-12T06:43:00.882747622Z [34m│[0m   Downloading pydantic-1.10.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+2023-05-12T06:43:00.901777473Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 204.4 MB/s eta 0:00:00
+2023-05-12T06:43:01.097747984Z [34m│[0m Collecting pyjwt[crypto]==2.7.0
+2023-05-12T06:43:01.102499849Z [34m│[0m   Downloading PyJWT-2.7.0-py3-none-any.whl (22 kB)
+2023-05-12T06:43:01.348959240Z [34m│[0m Collecting pymilvus==2.2.8
+2023-05-12T06:43:01.355649801Z [34m│[0m   Downloading pymilvus-2.2.8-py3-none-any.whl (133 kB)
+2023-05-12T06:43:01.360415081Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.6/133.6 kB 203.1 MB/s eta 0:00:00
+2023-05-12T06:43:01.574292838Z [34m│[0m Collecting pypdf2==3.0.1
+2023-05-12T06:43:01.581314862Z [34m│[0m   Downloading pypdf2-3.0.1-py3-none-any.whl (232 kB)
+2023-05-12T06:43:01.586149165Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.6/232.6 kB 243.8 MB/s eta 0:00:00
+2023-05-12T06:43:01.761630252Z [34m│[0m Collecting python-dateutil==2.8.2
+2023-05-12T06:43:02.729900610Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/python-dateutil/2.8.2/python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+2023-05-12T06:43:02.833757138Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 2.4 MB/s eta 0:00:00
+2023-05-12T06:43:03.013312550Z [34m│[0m Collecting python-dotenv==0.21.1
+2023-05-12T06:43:03.018319485Z [34m│[0m   Downloading python_dotenv-0.21.1-py3-none-any.whl (19 kB)
+2023-05-12T06:43:03.177654350Z [34m│[0m Collecting python-multipart==0.0.6
+2023-05-12T06:43:03.182961672Z [34m│[0m   Downloading python_multipart-0.0.6-py3-none-any.whl (45 kB)
+2023-05-12T06:43:03.186919290Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.7/45.7 kB 120.5 MB/s eta 0:00:00
+2023-05-12T06:43:03.351609043Z [34m│[0m Collecting python-pptx==0.6.21
+2023-05-12T06:43:03.359095003Z [34m│[0m   Downloading python-pptx-0.6.21.tar.gz (10.1 MB)
+2023-05-12T06:43:03.409398078Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 225.2 MB/s eta 0:00:00
+2023-05-12T06:43:04.130522356Z [34m│[0m   Preparing metadata (setup.py): started
+2023-05-12T06:43:06.738660058Z [34m│[0m   Preparing metadata (setup.py): finished with status 'done'
+2023-05-12T06:43:06.997801599Z [34m│[0m Collecting pytz==2023.3
+2023-05-12T06:43:07.002515991Z [34m│[0m   Downloading pytz-2023.3-py2.py3-none-any.whl (502 kB)
+2023-05-12T06:43:07.009571477Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.3/502.3 kB 181.1 MB/s eta 0:00:00
+2023-05-12T06:43:07.267336119Z [34m│[0m Collecting pyyaml==6.0
+2023-05-12T06:43:07.273301968Z [34m│[0m   Downloading PyYAML-6.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (682 kB)
+2023-05-12T06:43:07.281513927Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 682.2/682.2 kB 159.0 MB/s eta 0:00:00
+2023-05-12T06:43:07.584725129Z [34m│[0m Collecting qdrant-client==1.1.6
+2023-05-12T06:43:07.590852357Z [34m│[0m   Downloading qdrant_client-1.1.6-py3-none-any.whl (126 kB)
+2023-05-12T06:43:07.595630569Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.9/126.9 kB 170.8 MB/s eta 0:00:00
+2023-05-12T06:43:07.866006662Z [34m│[0m Collecting redis==4.5.1
+2023-05-12T06:43:07.875684564Z [34m│[0m   Downloading redis-4.5.1-py3-none-any.whl (238 kB)
+2023-05-12T06:43:07.884968125Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 238.5/238.5 kB 44.5 MB/s eta 0:00:00
+2023-05-12T06:43:09.493761643Z [34m│[0m Collecting regex==2023.5.5
+2023-05-12T06:43:09.501145693Z [34m│[0m   Downloading regex-2023.5.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (769 kB)
+2023-05-12T06:43:09.524755732Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 769.7/769.7 kB 39.1 MB/s eta 0:00:00
+2023-05-12T06:43:09.760105879Z [34m│[0m Collecting requests==2.28.2
+2023-05-12T06:43:10.691812983Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/requests/2.28.2/requests-2.28.2-py3-none-any.whl (62 kB)
+2023-05-12T06:43:10.703230562Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 7.4 MB/s eta 0:00:00
+2023-05-12T06:43:10.870543903Z [34m│[0m Collecting rfc3986[idna2008]==1.5.0
+2023-05-12T06:43:10.879312114Z [34m│[0m   Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)
+2023-05-12T06:43:11.284133219Z [34m│[0m Collecting scikit-learn==1.2.2
+2023-05-12T06:43:11.291992055Z [34m│[0m   Downloading scikit_learn-1.2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (9.6 MB)
+2023-05-12T06:43:11.392750043Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.6/9.6 MB 100.6 MB/s eta 0:00:00
+2023-05-12T06:43:11.996435813Z [34m│[0m Collecting scipy==1.9.3
+2023-05-12T06:43:12.004317955Z [34m│[0m   Downloading scipy-1.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (33.7 MB)
+2023-05-12T06:43:12.937598439Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.7/33.7 MB 36.0 MB/s eta 0:00:00
+2023-05-12T06:43:13.314042584Z [34m│[0m Collecting sentence-transformers==2.2.2
+2023-05-12T06:43:13.319106522Z [34m│[0m   Downloading sentence-transformers-2.2.2.tar.gz (85 kB)
+2023-05-12T06:43:13.325291935Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.0/86.0 kB 40.7 MB/s eta 0:00:00
+2023-05-12T06:43:13.394681164Z [34m│[0m   Preparing metadata (setup.py): started
+2023-05-12T06:43:16.447609668Z [34m│[0m   Preparing metadata (setup.py): finished with status 'done'
+2023-05-12T06:43:16.825572619Z [34m│[0m Collecting sentencepiece==0.1.99
+2023-05-12T06:43:16.834479732Z [34m│[0m   Downloading sentencepiece-0.1.99-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+2023-05-12T06:43:16.872628360Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 38.6 MB/s eta 0:00:00
+2023-05-12T06:43:17.629310444Z [34m│[0m Collecting setuptools==67.7.2
+2023-05-12T06:43:17.633559706Z [34m│[0m   Downloading setuptools-67.7.2-py3-none-any.whl (1.1 MB)
+2023-05-12T06:43:17.641777744Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 246.8 MB/s eta 0:00:00
+2023-05-12T06:43:17.815925409Z [34m│[0m Collecting six==1.16.0
+2023-05-12T06:43:18.542988160Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/six/1.16/six-1.16.0-py2.py3-none-any.whl (11 kB)
+2023-05-12T06:43:18.702755347Z [34m│[0m Collecting sniffio==1.3.0
+2023-05-12T06:43:18.706804874Z [34m│[0m   Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+2023-05-12T06:43:19.779535986Z [34m│[0m Collecting sqlalchemy==2.0.12
+2023-05-12T06:43:19.787989384Z [34m│[0m   Downloading SQLAlchemy-2.0.12-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.7 MB)
+2023-05-12T06:43:19.804167997Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 238.7 MB/s eta 0:00:00
+2023-05-12T06:43:20.025942101Z [34m│[0m Collecting starlette==0.25.0
+2023-05-12T06:43:20.032284118Z [34m│[0m   Downloading starlette-0.25.0-py3-none-any.whl (66 kB)
+2023-05-12T06:43:20.037200592Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 208.9 MB/s eta 0:00:00
+2023-05-12T06:43:20.225537408Z [34m│[0m Collecting sympy==1.11.1
+2023-05-12T06:43:20.233376887Z [34m│[0m   Downloading sympy-1.11.1-py3-none-any.whl (6.5 MB)
+2023-05-12T06:43:20.266169225Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 222.9 MB/s eta 0:00:00
+2023-05-12T06:43:20.483575065Z [34m│[0m Collecting tenacity==8.2.2
+2023-05-12T06:43:20.487559180Z [34m│[0m   Downloading tenacity-8.2.2-py3-none-any.whl (24 kB)
+2023-05-12T06:43:20.665407143Z [34m│[0m Collecting threadpoolctl==3.1.0
+2023-05-12T06:43:20.669645429Z [34m│[0m   Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+2023-05-12T06:43:20.879235154Z [34m│[0m Collecting tiktoken==0.2.0
+2023-05-12T06:43:20.888589917Z [34m│[0m   Downloading tiktoken-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+2023-05-12T06:43:20.914369533Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 75.7 MB/s eta 0:00:00
+2023-05-12T06:43:21.656702227Z [34m│[0m Collecting tokenizers==0.13.3
+2023-05-12T06:43:21.665644919Z [34m│[0m   Downloading tokenizers-0.13.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.8 MB)
+2023-05-12T06:43:21.888382977Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.8/7.8 MB 35.7 MB/s eta 0:00:00
+2023-05-12T06:43:22.199195632Z [34m│[0m Collecting torch==2.0.1
+2023-05-12T06:43:22.206192432Z [34m│[0m   Downloading torch-2.0.1-cp310-cp310-manylinux1_x86_64.whl (619.9 MB)
+2023-05-12T06:43:42.969688520Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 619.9/619.9 MB 20.0 MB/s eta 0:00:00
+2023-05-12T06:43:48.322899486Z [34m│[0m Collecting torchvision==0.15.2
+2023-05-12T06:43:48.332539142Z [34m│[0m   Downloading torchvision-0.15.2-cp310-cp310-manylinux1_x86_64.whl (6.0 MB)
+2023-05-12T06:43:48.463698303Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 47.7 MB/s eta 0:00:00
+2023-05-12T06:43:48.818893828Z [34m│[0m Collecting tqdm==4.65.0
+2023-05-12T06:43:48.825462668Z [34m│[0m   Downloading tqdm-4.65.0-py3-none-any.whl (77 kB)
+2023-05-12T06:43:48.832727783Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 kB 29.0 MB/s eta 0:00:00
+2023-05-12T06:43:49.084812258Z [34m│[0m Collecting transformers==4.28.1
+2023-05-12T06:43:49.096924433Z [34m│[0m   Downloading transformers-4.28.1-py3-none-any.whl (7.0 MB)
+2023-05-12T06:43:49.382693592Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 24.8 MB/s eta 0:00:00
+2023-05-12T06:43:49.644621648Z [34m│[0m Collecting typing-extensions==4.5.0
+2023-05-12T06:43:50.456668496Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/typing-extensions/4.5/typing_extensions-4.5.0-py3-none-any.whl (27 kB)
+2023-05-12T06:43:50.627277226Z [34m│[0m Collecting typing-inspect==0.8.0
+2023-05-12T06:43:50.633271187Z [34m│[0m   Downloading typing_inspect-0.8.0-py3-none-any.whl (8.7 kB)
+2023-05-12T06:43:50.809639895Z [34m│[0m Collecting tzdata==2023.3
+2023-05-12T06:43:50.815053527Z [34m│[0m   Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+2023-05-12T06:43:50.829899404Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 kB 35.2 MB/s eta 0:00:00
+2023-05-12T06:43:51.218278412Z [34m│[0m Collecting ujson==5.7.0
+2023-05-12T06:43:51.224800745Z [34m│[0m   Downloading ujson-5.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (52 kB)
+2023-05-12T06:43:51.231483975Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 22.5 MB/s eta 0:00:00
+2023-05-12T06:43:51.612774916Z [34m│[0m Collecting urllib3==1.26.15
+2023-05-12T06:43:52.620635727Z [34m│[0m   Downloading https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/urllib3/1.26.15/urllib3-1.26.15-py2.py3-none-any.whl (140 kB)
+2023-05-12T06:43:52.645384443Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.9/140.9 kB 7.2 MB/s eta 0:00:00
+2023-05-12T06:43:52.886449993Z [34m│[0m Collecting uvicorn==0.20.0
+2023-05-12T06:43:52.895363014Z [34m│[0m   Downloading uvicorn-0.20.0-py3-none-any.whl (56 kB)
+2023-05-12T06:43:52.907768055Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.9/56.9 kB 8.9 MB/s eta 0:00:00
+2023-05-12T06:43:53.258032542Z [34m│[0m Collecting uvloop==0.17.0
+2023-05-12T06:43:53.269132041Z [34m│[0m   Downloading uvloop-0.17.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.1 MB)
+2023-05-12T06:43:53.436361725Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 25.7 MB/s eta 0:00:00
+2023-05-12T06:43:53.633373670Z [34m│[0m Collecting validators==0.20.0
+2023-05-12T06:43:53.639502603Z [34m│[0m   Downloading validators-0.20.0.tar.gz (30 kB)
+2023-05-12T06:43:53.699065508Z [34m│[0m   Preparing metadata (setup.py): started
+2023-05-12T06:43:56.836162552Z [34m│[0m   Preparing metadata (setup.py): finished with status 'done'
+2023-05-12T06:43:57.096024766Z [34m│[0m Collecting watchfiles==0.19.0
+2023-05-12T06:43:57.105567032Z [34m│[0m   Downloading watchfiles-0.19.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+2023-05-12T06:43:57.129551910Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 67.6 MB/s eta 0:00:00
+2023-05-12T06:43:57.461676621Z [34m│[0m Collecting weaviate-client==3.17.1
+2023-05-12T06:43:57.468120896Z [34m│[0m   Downloading weaviate_client-3.17.1-py3-none-any.whl (95 kB)
+2023-05-12T06:43:57.473889043Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.5/95.5 kB 108.2 MB/s eta 0:00:00
+2023-05-12T06:43:57.886848341Z [34m│[0m Collecting websockets==11.0.3
+2023-05-12T06:43:57.895786478Z [34m│[0m   Downloading websockets-11.0.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (129 kB)
+2023-05-12T06:43:57.901649338Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.9/129.9 kB 119.7 MB/s eta 0:00:00
+2023-05-12T06:43:58.140116692Z [34m│[0m Collecting xlsxwriter==3.1.0
+2023-05-12T06:43:58.148466586Z [34m│[0m   Downloading XlsxWriter-3.1.0-py3-none-any.whl (152 kB)
+2023-05-12T06:43:58.161456548Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 152.7/152.7 kB 128.3 MB/s eta 0:00:00
+2023-05-12T06:43:58.760620259Z [34m│[0m Collecting yarl==1.9.2
+2023-05-12T06:43:58.769129608Z [34m│[0m   Downloading yarl-1.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (268 kB)
+2023-05-12T06:43:58.775676398Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 268.8/268.8 kB 151.9 MB/s eta 0:00:00
+2023-05-12T06:43:59.208875882Z [34m│[0m Collecting zstandard==0.21.0
+2023-05-12T06:43:59.224999932Z [34m│[0m   Downloading zstandard-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.7 MB)
+2023-05-12T06:43:59.247934516Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 141.6 MB/s eta 0:00:00
+2023-05-12T06:44:04.383095519Z [34m│[0m Collecting nvidia-cusparse-cu11==11.7.4.91
+2023-05-12T06:44:04.429056831Z [34m│[0m   Downloading nvidia_cusparse_cu11-11.7.4.91-py3-none-manylinux1_x86_64.whl (173.2 MB)
+2023-05-12T06:44:09.873352678Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.2/173.2 MB 34.0 MB/s eta 0:00:00
+2023-05-12T06:44:11.084726360Z [34m│[0m Collecting nvidia-cuda-cupti-cu11==11.7.101
+2023-05-12T06:44:11.094307186Z [34m│[0m   Downloading nvidia_cuda_cupti_cu11-11.7.101-py3-none-manylinux1_x86_64.whl (11.8 MB)
+2023-05-12T06:44:11.542888996Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 27.4 MB/s eta 0:00:00
+2023-05-12T06:44:11.783490692Z [34m│[0m Collecting nvidia-nvtx-cu11==11.7.91
+2023-05-12T06:44:11.787894844Z [34m│[0m   Downloading nvidia_nvtx_cu11-11.7.91-py3-none-manylinux1_x86_64.whl (98 kB)
+2023-05-12T06:44:11.798143075Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.6/98.6 kB 19.5 MB/s eta 0:00:00
+2023-05-12T06:44:11.968074986Z [34m│[0m Collecting nvidia-curand-cu11==10.2.10.91
+2023-05-12T06:44:11.979662634Z [34m│[0m   Downloading nvidia_curand_cu11-10.2.10.91-py3-none-manylinux1_x86_64.whl (54.6 MB)
+2023-05-12T06:44:13.960022113Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 MB 26.8 MB/s eta 0:00:00
+2023-05-12T06:44:14.497123698Z [34m│[0m Collecting nvidia-cufft-cu11==10.9.0.58
+2023-05-12T06:44:14.499581560Z [34m│[0m   Downloading nvidia_cufft_cu11-10.9.0.58-py3-none-manylinux1_x86_64.whl (168.4 MB)
+2023-05-12T06:44:20.466153781Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 168.4/168.4 MB 27.4 MB/s eta 0:00:00
+2023-05-12T06:44:21.719737227Z [34m│[0m Collecting nvidia-cublas-cu11==11.10.3.66
+2023-05-12T06:44:21.728952746Z [34m│[0m   Downloading nvidia_cublas_cu11-11.10.3.66-py3-none-manylinux1_x86_64.whl (317.1 MB)
+2023-05-12T06:44:33.179687704Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.1/317.1 MB 26.2 MB/s eta 0:00:00
+2023-05-12T06:44:35.324166722Z [34m│[0m Collecting nvidia-nccl-cu11==2.14.3
+2023-05-12T06:44:35.337952649Z [34m│[0m   Downloading nvidia_nccl_cu11-2.14.3-py3-none-manylinux1_x86_64.whl (177.1 MB)
+2023-05-12T06:44:41.098553002Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.1/177.1 MB 35.5 MB/s eta 0:00:00
+2023-05-12T06:44:42.338325984Z [34m│[0m Collecting triton==2.0.0
+2023-05-12T06:44:42.347442457Z [34m│[0m   Downloading triton-2.0.0-1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (63.3 MB)
+2023-05-12T06:44:44.199777947Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.3/63.3 MB 33.7 MB/s eta 0:00:00
+2023-05-12T06:44:44.731187669Z [34m│[0m Collecting nvidia-cuda-nvrtc-cu11==11.7.99
+2023-05-12T06:44:44.738391553Z [34m│[0m   Downloading nvidia_cuda_nvrtc_cu11-11.7.99-2-py3-none-manylinux1_x86_64.whl (21.0 MB)
+2023-05-12T06:44:45.338488939Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.0/21.0 MB 35.4 MB/s eta 0:00:00
+2023-05-12T06:44:45.665726000Z [34m│[0m Collecting nvidia-cudnn-cu11==8.5.0.96
+2023-05-12T06:44:45.672206022Z [34m│[0m   Downloading nvidia_cudnn_cu11-8.5.0.96-2-py3-none-manylinux1_x86_64.whl (557.1 MB)
+2023-05-12T06:45:01.208605784Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 557.1/557.1 MB 34.9 MB/s eta 0:00:00
+2023-05-12T06:45:04.718112768Z [34m│[0m Collecting nvidia-cuda-runtime-cu11==11.7.99
+2023-05-12T06:45:04.747560929Z [34m│[0m   Downloading nvidia_cuda_runtime_cu11-11.7.99-py3-none-manylinux1_x86_64.whl (849 kB)
+2023-05-12T06:45:04.775923281Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 849.3/849.3 kB 37.6 MB/s eta 0:00:00
+2023-05-12T06:45:05.001180588Z [34m│[0m Collecting nvidia-cusolver-cu11==11.4.0.1
+2023-05-12T06:45:05.009219990Z [34m│[0m   Downloading nvidia_cusolver_cu11-11.4.0.1-2-py3-none-manylinux1_x86_64.whl (102.6 MB)
+2023-05-12T06:45:07.956503490Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.6/102.6 MB 36.0 MB/s eta 0:00:00
+2023-05-12T06:45:10.711572350Z [34m│[0m Requirement already satisfied: wheel in /usr/local/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch==2.0.1->-r /code/requirements.txt (line 109)) (0.40.0)
+2023-05-12T06:45:12.142156885Z [34m│[0m Collecting cmake
+2023-05-12T06:45:12.163446329Z [34m│[0m   Downloading cmake-3.26.3-py2.py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (24.0 MB)
+2023-05-12T06:45:13.070403151Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.0/24.0 MB 28.4 MB/s eta 0:00:00
+2023-05-12T06:45:13.522923228Z [34m│[0m Collecting lit
+2023-05-12T06:45:13.529400487Z [34m│[0m   Downloading lit-16.0.3.tar.gz (138 kB)
+2023-05-12T06:45:13.542593424Z [34m│[0m      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.0/138.0 kB 16.1 MB/s eta 0:00:00
+2023-05-12T06:45:13.927475333Z [34m│[0m   Preparing metadata (setup.py): started
+2023-05-12T06:45:16.575878385Z [34m│[0m   Preparing metadata (setup.py): finished with status 'done'
+2023-05-12T06:45:16.905451606Z [34m│[0m Building wheels for collected packages: docx2txt, hnswlib, llama-index, python-pptx, sentence-transformers, validators, lit
+2023-05-12T06:45:16.907129483Z [34m│[0m   Building wheel for docx2txt (setup.py): started
+2023-05-12T06:45:18.046968088Z [34m│[0m   Building wheel for docx2txt (setup.py): finished with status 'done'
+2023-05-12T06:45:18.047905773Z [34m│[0m   Created wheel for docx2txt: filename=docx2txt-0.8-py3-none-any.whl size=3957 sha256=27e94e4d6d534adf3fa2a0de2aa65ae9095ec2b4fd38b045778e7a39743c2fec
+2023-05-12T06:45:18.047924707Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/22/58/cf/093d0a6c3ecfdfc5f6ddd5524043b88e59a9a199cb02352966
+2023-05-12T06:45:18.052675134Z [34m│[0m   Building wheel for hnswlib (pyproject.toml): started
+2023-05-12T06:46:56.603684449Z [34m│[0m   Building wheel for hnswlib (pyproject.toml): still running...
+2023-05-12T06:46:57.413511874Z [34m│[0m   Building wheel for hnswlib (pyproject.toml): finished with status 'done'
+2023-05-12T06:46:57.413542749Z [34m│[0m   Created wheel for hnswlib: filename=hnswlib-0.7.0-cp310-cp310-linux_x86_64.whl size=2154630 sha256=349143f15a0f26cd52c6082bb55ce9a3ee4e481da527f577fb3cf45def0f16a0
+2023-05-12T06:46:57.437137409Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/8a/ae/ec/235a682e0041fbaeee389843670581ec6c66872db856dfa9a4
+2023-05-12T06:46:57.437169424Z [34m│[0m   Building wheel for llama-index (setup.py): started
+2023-05-12T06:46:58.178929577Z [34m│[0m   Building wheel for llama-index (setup.py): finished with status 'done'
+2023-05-12T06:46:58.178960202Z [34m│[0m   Created wheel for llama-index: filename=llama_index-0.5.4-py3-none-any.whl size=245703 sha256=1029b6e5d213e14ad6c4ba4ac5b5f22f934635127ef61f5838ff89e69859eaa3
+2023-05-12T06:46:58.178965534Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/03/7f/65/3e8fb5611b876664658e453de7c029b5e01ebb9292ffa5f88b
+2023-05-12T06:46:58.184882042Z [34m│[0m   Building wheel for python-pptx (setup.py): started
+2023-05-12T06:46:58.814719761Z [34m│[0m   Building wheel for python-pptx (setup.py): finished with status 'done'
+2023-05-12T06:46:58.816712862Z [34m│[0m   Created wheel for python-pptx: filename=python_pptx-0.6.21-py3-none-any.whl size=470935 sha256=9f7df4b21281ccc57c5bcd804026721a564c2d6c81596dd5a61c4c35e4040c36
+2023-05-12T06:46:58.817938115Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/ea/dd/74/01b3ec7256a0800b99384e9a0f7620e358afc3a51a59bf9b49
+2023-05-12T06:46:58.822878553Z [34m│[0m   Building wheel for sentence-transformers (setup.py): started
+2023-05-12T06:46:59.391309263Z [34m│[0m   Building wheel for sentence-transformers (setup.py): finished with status 'done'
+2023-05-12T06:46:59.392248766Z [34m│[0m   Created wheel for sentence-transformers: filename=sentence_transformers-2.2.2-py3-none-any.whl size=125926 sha256=64ee9054aa8ab8b9557eed00b8e69cecb9a05958fec7526a7e09ffb621523677
+2023-05-12T06:46:59.392752035Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/62/f2/10/1e606fd5f02395388f74e7462910fe851042f97238cbbd902f
+2023-05-12T06:46:59.397085171Z [34m│[0m   Building wheel for validators (setup.py): started
+2023-05-12T06:46:59.893983174Z [34m│[0m   Building wheel for validators (setup.py): finished with status 'done'
+2023-05-12T06:46:59.894644079Z [34m│[0m   Created wheel for validators: filename=validators-0.20.0-py3-none-any.whl size=19579 sha256=db8f75cb6d621052b3f72e54df65313faaabe43b4c0631fbd99e1ba1e87f849f
+2023-05-12T06:46:59.895000765Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/f2/ed/dd/d3a556ad245ef9dc570c6bcd2f22886d17b0b408dd3bbb9ac3
+2023-05-12T06:46:59.898298762Z [34m│[0m   Building wheel for lit (setup.py): started
+2023-05-12T06:47:00.418187042Z [34m│[0m   Building wheel for lit (setup.py): finished with status 'done'
+2023-05-12T06:47:00.418559554Z [34m│[0m   Created wheel for lit: filename=lit-16.0.3-py3-none-any.whl size=88173 sha256=5aefc5fd32d62ac35b8c41e124f388b09b8b9fab1b5bb3051a9811719cf6e0c1
+2023-05-12T06:47:00.419063538Z [34m│[0m   Stored in directory: /tmp/pip-ephem-wheel-cache-5eopd4cf/wheels/d6/81/1c/a49ba782377339294cc45c9899927b61a92e58d6ad3ac942f7
+2023-05-12T06:47:00.421812997Z [34m│[0m Successfully built docx2txt hnswlib llama-index python-pptx sentence-transformers validators lit
+2023-05-12T06:47:03.611891483Z [34m│[0m Installing collected packages: tokenizers, sentencepiece, rfc3986, pytz, mpmath, monotonic, lit, duckdb, docx2txt, cmake, azure-common, zstandard, xlsxwriter, websockets, uvloop, urllib3, ujson, tzdata, typing-extensions, tqdm, threadpoolctl, tenacity, sympy, sniffio, six, setuptools, regex, pyyaml, python-multipart, python-dotenv, pypdf2, pyjwt, pycryptodomex, pycparser, protobuf, portalocker, pillow, packaging, nvidia-nccl-cu11, nvidia-cufft-cu11, nvidia-cuda-nvrtc-cu11, numpy, networkx, mypy-extensions, multidict, markupsafe, lz4, lxml, loguru, joblib, idna, hyperframe, httptools, hpack, h11, grpcio, greenlet, fsspec, frozenlist, filelock, dnspython, decorator, click, charset-normalizer, certifi, backoff, attrs, async-timeout, yarl, validators, uvicorn, typing-inspect, sqlalchemy, scipy, requests, redis, python-pptx, python-dateutil, pydantic, nvidia-nvtx-cu11, nvidia-cusparse-cu11, nvidia-curand-cu11, nvidia-cuda-runtime-cu11, nvidia-cuda-cupti-cu11, nvidia-cublas-cu11, numexpr, nltk, marshmallow, jinja2, isodate, hnswlib, h2, grpcio-tools, clickhouse-connect, cffi, blobfile, anyio, aiosignal, watchfiles, tiktoken, starlette, scikit-learn, posthog, pinecone-client, pandas, openapi-schema-pydantic, nvidia-cusolver-cu11, nvidia-cudnn-cu11, marshmallow-enum, huggingface-hub, httpcore, environs, cryptography, azure-core, arrow, aiohttp, transformers, pymilvus, openai, httpx, fastapi, dataclasses-json, azure-search-documents, authlib, weaviate-client, msal, langchain, qdrant-client, msal-extensions, llama-index, azure-identity, triton, torch, torchvision, sentence-transformers, chromadb
+2023-05-12T06:47:19.790517968Z [34m│[0m   Attempting uninstall: setuptools
+2023-05-12T06:47:19.791751155Z [34m│[0m     Found existing installation: setuptools 65.5.1
+2023-05-12T06:47:19.866495430Z [34m│[0m     Uninstalling setuptools-65.5.1:
+2023-05-12T06:47:19.940617919Z [34m│[0m       Successfully uninstalled setuptools-65.5.1
